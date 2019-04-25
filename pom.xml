@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>com.scloud</groupId>
+    <artifactId>scloud-all</artifactId>
+    <version>1.0.0</version>
+    <name>scloud-all</name>
+    <packaging>pom</packaging>
+    <modules>
+        <module>demo-hello</module>
+        <module>demo-ribbon-consumer</module>
+        <module>demo-user</module>
+        <module>demo-hello-api</module>
+        <module>demo-common</module>
+        <module>demo-feign-consumer</module>
+    </modules>
+
+    <properties>
+        <java.version>1.8</java.version>
+        <spring-cloud-eureka.version>1.4.4.RELEASE</spring-cloud-eureka.version>
+        <spring-cloud-ribbon.version>1.4.4.RELEASE</spring-cloud-ribbon.version>
+        <spring-cloud-hystrix.version>1.4.4.RELEASE</spring-cloud-hystrix.version>
+        <spring-cloud-feign.version>2.1.0.RELEASE</spring-cloud-feign.version>
+        <spring-cloud.version>Greenwich.RELEASE</spring-cloud.version>
+        <mybatis.version>1.3.1</mybatis.version>
+        <mysql-connector.version>8.0.13</mysql-connector.version>
+        <druid.version>1.1.6</druid.version>
+        <lombok.version>1.18.2</lombok.version>
+    </properties>
+
+    <parent>
+        <groupId>org.springframework.boot</groupId>
+        <artifactId>spring-boot-starter-parent</artifactId>
+        <version>2.1.4.RELEASE</version>
+        <relativePath/> <!-- lookup parent from repository -->
+    </parent>
+
+</project>
